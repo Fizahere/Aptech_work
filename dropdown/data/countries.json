@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Pakistan",
+        "cities": [
+            {
+                "name": "Karachi",
+                "branches": [
+                    {
+                        "name": "SFC",
+                        "picture": "SFC.jpg"
+                    },
+                    {
+                        "name": "Metro",
+                        "picture": "Metro.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Lahore",
+                "branches": [
+                    {
+                        "name": "LHR1",
+                        "picture": "LHR1.jpg"
+                    },
+                    {
+                        "name": "LHR2",
+                        "picture": "LHR2.jpg"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "India",
+        "cities": [
+            {
+                "name": "Mumbai",
+                "branches": [
+                    {
+                        "name": "Mum1",
+                        "picture": "Mum1.jpg"
+                    },
+                    {
+                        "name": "Mum2",
+                        "picture": "Mum2.jpg"
+                    }
+                ]
+            },
+            {
+                "name": "Dehli",
+                "branches": [
+                    {
+                        "name": "Dehli1",
+                        "picture": "Dehli1.jpg"
+                    },
+                    {
+                        "name": "Dehli2",
+                        "picture": "Dehli2.jpg"
+                    }
+                ]
+            }
+        ]
+    }
+]

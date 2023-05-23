@@ -1,0 +1,39 @@
+{
+    "Pakistan":["select","Karachi","Lahore","Islamabad"],
+    "India":["select","Mumbai","Dehli","Lucknow"],
+    "China":["select","Sanghai","Beijing","Wuhan"],
+
+    "Karachi":["select","Aptech-SFC","Aptech-metrostar"],
+"Lahore":["select","Aptech-Walton road","Aptech-johar town"],
+"Islamabad":["select","Aptech-islamabad-1","Aptech-islamabad-2"],
+
+
+"Mumbai":["select","Aptech-Mumbai-1","Aptech-Mumbai-2"],
+"Dehli":["select","Aptech-Dehli-1","Aptech-Dehli-2"],
+"Lucknow":["select","Aptech-Lucknow-1","Aptech-Lucknow-2"],
+
+"Sanghai":["select","Aptech-Sanghai-1","Aptech-Sanghai-2"],
+"Beijing":["select","Aptech-Beijing-1","Aptech-Beijing-2"],
+"Wuhan":["select","Aptech-Wuhan-1","Aptech-Wuhan-2"],
+
+"AptechSFC":["images/img1.jpg"],
+"AptechMetroStar":["images/img4.jpg"],
+"AptechWaltonRoad":["images/img5.jpg"],
+"AptechJoharTown":["images/img6.jpg"],
+"AptechIslamabad1":["images/img1.jpg"],
+"AptechIslamabad2":["images/1.jpg"],
+"AptechMumbai1":["images/2.jpg"],
+"AptechMumbai2":["images/3.jpg"],
+"AptechDehli1":["images/img1.jpg"],
+"AptechDehli2":["images/1.jpg"],
+"AptechLucknow1":["images/img5.jpg"],
+"AptechLucknow2":["images/3.jpg"],
+"AptechSanghai1":["images/img1.jpg"],
+"AptechSanghai2":["images/img4.jpg"],
+"AptechBeijing1":["images/img6.jpg"],
+"AptechBeijing2":["images/3.jpg"],
+"AptechWuhan1":["images/img1.jpg"],
+"AptechWuhan2":["images/1.jpg"]
+
+
+}

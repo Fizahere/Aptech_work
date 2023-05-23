@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <select id="country-select">
+        <option value="">Select Country</option>
+    </select>
+
+    <select id="city-select">
+        <option value="">Select City</option>
+    </select>
+
+
+    <select id="branch-select">
+        <option value="">Select Branch</option>
+    </select>
+
+
+    <img id="img-container" />
+
+    <script>
+
+        const countrySelect = document.getElementById("country-select")
+        const citySelect = document.getElementById("city-select")
+        const branchSelect = document.getElementById("branch-select")
+        const imageContainer = document.getElementById('img-container')
+
+        let data = []
+        let selectedCities = []
+        let selectedBranches = []
+
+
+        fetch('/data/countries.json')
+            .then(response => response.json())
+            .then((response) => {
+                data = response
+                response.forEach((item, index) => {
+                    countrySelect.innerHTML += `<option value="${item.name}">${item.name}</option>`
+                })
+            })
+
+        function getSelectList(name, items) {
+            let html = `<option value="">Select ${name || "List"}</option>`
+            items.forEach((item, index) => {
+                html += `<option value="${item.name}">${item.name}</option>`
+            })
+            return html
+        }
+
+        countrySelect.addEventListener('change', (e) => {
+            let country = e.target.value
+            const selectedCountry = data.find((item, index) => {
+                return item.name === country
+            })
+            selectedCities = selectedCountry.cities
+            citySelect.innerHTML = getSelectList("City", selectedCountry.cities)
+        })
+
+        citySelect.addEventListener('change', (e) => {
+            let city = e.target.value
+            const selectedCity = selectedCities.find((item, index) => {
+                return item.name === city
+            })
+            selectedBranches = selectedCity.branches
+            branchSelect.innerHTML = getSelectList("Branch", selectedCity.branches)
+        })
+
+        branchSelect.addEventListener('change', (e) => {
+            let branch = e.target.value
+            const selectedBranch = selectedBranches.find((item, index) => {
+                return item.name === branch
+            })
+                imageContainer.src = selectedBranch.picture
+        })
+
+    </script>
+</body>
+
+</html>
